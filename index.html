@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f1">
+  <meta name="description" content="Bhavik Parmar — scroll-assembled 3D cube pyramid design study.">
+  <title>Bhavik Parmar — Journey Cards + Scroll Pyramid</title>
+  <!-- Roboto: ExtraLight 200 for body, Light 300 for headings. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./CSS/styles.css">
+  <!-- Separate stylesheet for first-chapter cards and transitions -->
+  <link rel="stylesheet" href="./CSS/transitions.css">
+  <script src="./javascript/script.js" defer></script>
+</head>
+
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <header class="header">
+    <a class="brand" href="#myself" aria-label="Bhavik Parmar, return to top">
+      <strong>
+        <h1 id="title-myself">Bhavik Parmar</h1></span><span class="brand-dot"></span>
+      </strong>
+      <small>Gibsons, BC <span class="arrow">↗</span> <b>Ready to move</b></small>
+    </a>
+    <div class="header-actions">
+      <span class="prototype-label">INTERACTIVE PORTFOLIO / V2</span>
+      <div class="login-placeholder" aria-label="Login coming later"
+        title="Login will connect to Cognito in a later phase">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M8 9V7a4 4 0 018 0v2M7 9h10a2 2 0 012 2v7a2 2 0 01-2 2H7a2 2 0 01-2-2v-7a2 2 0 012-2zm5 4v3"
+            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <aside class="pyramid-zone"
+    aria-label="Decorative pyramid formed by fifteen colored cubes, which assemble as you scroll">
+    <div class="stage-glow" aria-hidden="true"></div>
+    <div class="camera" aria-hidden="true">
+      <div class="world" id="world">
+        <div class="ground-plane"></div>
+        <div class="platform-shadow"></div>
+        <div class="platform-side platform-side--front"></div>
+        <div class="platform-side platform-side--right"></div>
+        <div class="platform-top"></div>
+        <div class="cubes" id="cubes"></div>
+      </div>
+    </div>
+    <div class="stage-progress">
+      <div class="stage-progress__bar" id="progress-bar"></div>
+    </div>
+  </aside>
+
+  <main>
+    <section class="chapter" data-index="0" id="myself" aria-labelledby="title-myself">
+      <div class="chapter-copy">
+        <div class="chapter-center">
+
+          <p class="intro">MY JOURNEY FROM FINANCE TO DATA ANALYTICS AND MACHINE LEARNING.</p>
+          <!-- BEGIN: Independent journey-card component (replace the old story paragraphs). -->
+
+          <div class="journey" data-journey aria-label="Explore my journey">
+
+            <p class="journey__hint">
+              JOURNEY SUMMARY
+            </p>
+
+            <div class="journey-timeline">
+
+              <!-- Stage 1: Finance -->
+              <div class="journey-item">
+
+                <div class="journey-card" tabindex="0">
+                  <span class="journey-card__index">
+                    BEGINNING
+                  </span>
+
+                  <span class="journey-card__bottom">
+                    <span class="journey-card__label">
+                      Stepping stone<br>finance
+                    </span>
+
+                    <span class="journey-arrow" aria-hidden="true"></span>
+                  </span>
+                </div>
+
+                <div class="journey-item__content">
+                  <p>
+                    I started with <strong>commerce</strong>,
+                    but my curiosity eventually led me
+                    toward <strong>data analytics</strong>.
+                  </p>
+                </div>
+
+              </div>
+
+              <!-- Stage 2: Data and predictive tools -->
+              <div class="journey-item">
+
+                <div class="journey-card" tabindex="0">
+                  <span class="journey-card__index">
+                    TURNING POINT
+                  </span>
+
+                  <span class="journey-card__bottom">
+                    <span class="journey-card__label">
+                      Data and<br>predictive tools
+                    </span>
+
+                    <span class="journey-arrow" aria-hidden="true"></span>
+                  </span>
+                </div>
+
+                <div class="journey-item__content">
+                  <p>
+                    I began exploring how
+                    <strong>data and predictive tools</strong>
+                    could help answer complex questions,
+                    discover patterns and improve decisions.
+                  </p>
+                </div>
+
+              </div>
+
+              <!-- Stage 3: AI rise -->
+              <div class="journey-item">
+
+                <div class="journey-card" tabindex="0">
+                  <span class="journey-card__index">
+                    PRACTICE
+                  </span>
+
+                  <span class="journey-card__bottom">
+                    <span class="journey-card__label">
+                      AI rise
+                    </span>
+
+                    <span class="journey-arrow" aria-hidden="true"></span>
+                  </span>
+                </div>
+
+                <div class="journey-item__content">
+                  <p>
+                    Then came the rapid rise of
+                    <strong>artificial intelligence</strong>.
+                    Rather than competing with it,
+                    I believe in using AI intelligently
+                    to reduce repetitive work,
+                    solve problems and deliver
+                    <strong>meaningful results</strong>.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- END: Journey-card component. -->
+        </div>
+      </div>
+    </section>
+    <section class="chapter" data-index="1" id="education" aria-labelledby="title-education">
+      <div class="chapter-copy">
+        
+        <div class="chapter-center">
+          <p class="pretitle">SECOND LAYER / FOUR BLOCKS</p>
+          <h2 id="title-education">Ideas need<br><em>foundations.</em></h2>
+          <p class="intro">Education <span class="slash">/</span> Four blocks arrive and settle.</p>
+          <p class="draft-note">Education content placeholder.</p>
+        </div>
+        
+      </div>
+    </section>
+    <section class="chapter" data-index="2" id="certifications" aria-labelledby="title-certifications">
+      <div class="chapter-copy">
+        
+        <div class="chapter-center">
+          <p class="pretitle">THIRD LAYER / THREE BLOCKS</p>
+          <h2 id="title-certifications">Proof of<br><em>progress.</em></h2>
+          <p class="intro">Certifications <span class="slash">/</span> Three new cubes stack above.</p>
+          <p class="draft-note">Credentials and achievements will live here.</p>
+        </div>
+        
+      </div>
+    </section>
+    <section class="chapter" data-index="3" id="projects" aria-labelledby="title-projects">
+      <div class="chapter-copy">
+        
+        <div class="chapter-center">
+          
+          <h2 id="title-projects">Building what<br><em>matters.</em></h2>
+          <p class="intro">Projects <span class="slash">/</span> Two more cubes connect the structure.</p>
+          <p class="draft-note">Featured projects and technical diagrams will be added here.</p>
+        </div>
+        
+      </div>
+    </section>
+    <section class="chapter" data-index="4" id="research" aria-labelledby="title-research">
+      <div class="chapter-copy">
+        
+        <div class="chapter-center">
+        
+          <h2 id="title-research">Curiosity,<br><em>assembled.</em></h2>
+          <p class="intro">Research paper <span class="slash">/</span> The final cube completes the pyramid.</p>
+          <p class="draft-note">Final research and supporting evidence will be added here.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
